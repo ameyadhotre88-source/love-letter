@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Sneha ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== Global ===== */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #fff);
+    overflow: auto;
+}
+
+/* ===== Container ===== */
+.container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== Floating Hearts ===== */
+.heart {
+    position: absolute;
+    bottom: -40px;
+    font-size: 22px;
+    opacity: 0.6;
+    animation: floatUp 7s linear infinite;
+}
+@keyframes floatUp {
+    from { transform: translateY(0); opacity: 0; }
+    to { transform: translateY(-120vh); opacity: 0.8; }
+}
+
+/* ===== Screens ===== */
+.screen {
+    max-width: 720px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Photo ===== */
+.photo {
+   width: 100%;
+    max-width: 260px;   /* pehle 340px tha */
+    border-radius: 22px;
+    margin: 14px auto;
+    display: block;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+@keyframes softPop {
+    0% { transform: scale(0.92); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ===== Button ===== */
+button {
+    background: #ff4f8b;
+    color: white;
+    border: none;
+    padding: 15px 34px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: #e84378;
+    transform: translateY(-2px);
+}
+
+/* ===== Letter ===== */
+#letter {
+    display: none;
+    background: white;
+    padding: 26px;
+    border-radius: 20px;
+    line-height: 1.7;
+    text-align: left;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideUp 1.1s ease;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#letter h2 {
+    text-align: center;
+}
+.signature {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Floating hearts -->
+    <div class="heart" style="left:10%;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:1s;">💖</div>
+    <div class="heart" style="left:45%; animation-delay:2s;">💗</div>
+    <div class="heart" style="left:65%; animation-delay:3s;">💓</div>
+    <div class="heart" style="left:85%; animation-delay:4s;">💞</div>
+
+    <!-- START SCREEN -->
+    <div class="screen" id="start">
+        <h1>Hey Sneha 💖</h1>
+        <p>I made something just for you.</p>
+
+        <!-- PHOTO -->
+        <img src="us.jpg" alt="Us ❤️" class="photo">
+
+        <button onclick="openLetter()">Tap to Continue 💌</button>
+    </div>
+
+    <!-- LETTER SCREEN -->
+    <div class="screen" id="letter">
+        <h2>Dear Sneha ❤️</h2>
+
+        <p>
+        <!-- ⬇️⬇️⬇️ APNA POORA LONG LOVE LETTER YAHA PASTE KAR ⬇️⬇️⬇️ -->
+
+        Hello my Rasmalai ❤️ My baby girl 😘 My Love 
+It's the 12th of the month again Happy 8 months love it's been 8 months since we have been choosing eachother everyday each day. Inn 8 months mai i didn't even recieve only love but the strength the stability the support which only u could have given me in life every fight every argument gives me a clear image that tu sirf meri girlfriend nahi hai u are my safest place someone who becomes my mother when it comes to be strict and make me a better person Act like a father who guides his son on the right path of life thank you so so much for everything u have completed the missing piece of the puzzle of my life U have not only loved me in my good version but also the low versions of me and isliye ur love isn't only love it's something that heals me from inside eternally and the bond that we share we have isn't just temporary or normal it's something far more than that a magical bond . And not only ye 12th but every 12th of all the countless months coming ahead for us all i long and want is you your love your trust and that's all I want sirf tera presence hi sab face karne ka strength and confidence deta hu and i assure u we'll make something beautiful of this relationship and neverrr give up on uss Thank you for being you, for choosing us, aur mere saath har din khade rehne ke liye
+I love you more than words can ever explain ❤️🫂 I Love You So so so so much Baby bas tere paas hi reh jaane ka Mann karta haina and one day fs we gonna be permanent for life living and making a life together under the same roof same room same bed playing with our kids in our backyard teaching them life and show them how love sounds looks and feels like unke standards next level set karenge hum I am more than grateful to God that he made us cross our paths but also made those paths to walk the same route together I Love You tons and millions 💋💋❤️❤️        </p>
+
+        <div class="signature">— Yours Ameya ❤️</div>
+    </div>
+
+</div>
+
+<script>
+function openLetter() {
+    document.getElementById("start").style.display = "none";
+    document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
